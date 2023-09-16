@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #3ab54a;
+    --white: #fff;
+    --secondary-color: #045e61;
+
+}
+
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+.btn-primarys {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px 0.4px #0075374f;
+}
+
+.btn-primarys:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+    text-decoration: none;
+
+}
+
+.navbar {
+    background-color: var(--primary-color);
+
+    .nav-item {
+        color: var(--white);
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-item:hover {
+        color: rebeccapurple;
+    }
+
+
+
+    .navbar-nav .nav-link.active {
+        color: #fff;
+    }
+}
+
+.carousel-inner {
+    max-height: 120vh;
+
+    .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#00000000, rgb(0 0 0 / 59%));
+        opacity: 0.9;
+        pointer-events: none;
+    }
+
+    .carousel-caption {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+.about {
+    .btn-square {
+        background-color: var(--secondary-color);
+        padding: 5px;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+
+    }
+}
+
+.products-image {
+    max-width: 290px;
+    max-height: 250px;
+    position: relative;
+    overflow: hidden;
+
+    .img {
+        width: 100%;
+        height: 100%;
+        transition: .5s ease-in-out;
+    }
+
+    .h6 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        font-size: 28px;
+        font-weight: 900;
+        color: var(--secondary-color)
+    }
+}
+
+.products-image:hover {
+    .img {
+        filter: grayscale(1.9);
+        scale: 1.2;
+    }
+
+    .h6 {
+        z-index: 1;
+    }
+}
+
+.features {
+    .display-5 {
+        color: var(--secondary-color);
+    }
+
+    .btn-square {
+        background-color: var(--secondary-color);
+    }
+
+}
+
+.product {
+    .display-5 {
+        color: var(--secondary-color);
+    }
+}
+
+.footer-top {
+    background-color: var(--secondary-color);
+}
+
+.footer {
+    background-image: linear-gradient(#000000cc, #000000c7), url(https://png.pngtree.com/background/20230526/original/pngtree-photo-of-a-mechanical-engine-on-a-black-background-picture-image_2751507.jpg);
+    background-size: cover;
+    color: #fff;
+
+    .fw-bold {
+        color: #fff
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
